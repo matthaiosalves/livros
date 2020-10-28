@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>Biblioteca | Marcos</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+<link rel="shortcut icon" type="image/x-icon" href="https://www.flaticon.com/svg/static/icons/svg/1903/1903469.svg">
+</head>
+<style type="text/css">
+body {
+background-image: url('https://i.imgur.com/49hkJVJ.png');
+background-repeat: no-repeat;
+background-size: cover;
+margin: 0 auto;
+width: 960px;
+margin-left: 10rem;
+margin-top: 2rem;
+font-weight: bold;
+font-family: 'Roboto', sans-serif;
+}
+.table-striped tbody tr:nth-of-type(odd):hover {
+background-color:rgba(60, 179, 113, 0.5);
+font-size: 20px;
+}
+.table-striped tbody tr:nth-of-type(even):hover {
+background-color:rgba(60, 179, 113, 0.5);
+font-size: 20px;
+}
+#table_id {
+background-color:white;
+box-shadow: 0 0 1em rgba(0, 0, 0, 0.9); 
+}
+label {
+color:white;
+}
+.dataTables_wrapper .dataTables_info {
+color: white!important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+	background-color:rgba(60, 179, 113, 0.9);
+}
+</style>
+<body>
+	<table id="table_id" class="table table-striped table-bordered" style="width:960px;">
+        <thead>
+            <tr>
+            	<th>Livro(s)</th>
+                <th>Autor(es)</th>
+                <th>Editora(s)</th>
+                <th>Categoria(s)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>O Novo Testamento Grego</td>
+                <td>5ta Edição Revisada</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Bíblia Hebraica</td>
+                <td>Sturttgartensia</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Uma Introdução à Teologia</td>
+                <td>M. James Sawyer</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Bíblia de Jerusalém</td>
+                <td>Paulus</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>O Resgate do Pensamento Bíblico</td>
+                <td>John MacArthur</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Teologia Sistemática ao Alcance de Todos</td>
+                <td>Wayne Grudem</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Deus e o Mal - O Problema Resolvido</td>
+                <td>Gordon H. Clark</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Fé Em Busca de Compreesão</td>
+                <td>Karl Barth</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Palavra de Deus - Palavra do Homem</td>
+                <td>Karl Barth</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Histórica Eclesiástica</td>
+                <td>Eusébio de Cesaréia</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Dogmática - Vol.1 Doutrina Cristã de Deus</td>
+                <td>Emil Brunner</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Teologia Sistemática - 4ta Edição</td>
+                <td>Louis Berkhof</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Dogmática - Vol.3 - Doutrina Cristã da Igreja</td>
+                <td>Emil Brunner</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Dogmática - Vol.2 - Doutrina Cristã da Fé e Consumação</td>
+                <td>Emil Brunner</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Bíblia Thompson</td>
+                <td>Almeida Edição Conteporânea</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Teologia Sistemática Conteporânea</td>
+                <td>Júlio Andrade Ferreira</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>O Plano da Promessa de Deus - Teologia bíblica do Antigo e Novo Testamento</td>
+                <td>Walver C. Kaiser JR</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Em Toda a Extensão do Cosmos</td>
+                <td>Abraham Kuyper</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Bíblia de Estudo King James</td>
+                <td>King James</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Teologia Sistemática</td>
+                <td>Franklin Ferreira | Alan Myatt</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Dicionário Internacional de Teologia do Antigo Testamento</td>
+                <td>R. Laird Harris | Gleason L. Archer | JR Bruce K. Waltke</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Um Guia para Estudantes de Filosofia</td>
+                <td>David K. Naugle</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Calvinismo - 2ª Edição</td>
+                <td>Abraham Kuyper</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Sumário de Doutrina Cristã</td>
+                <td>Louis Berkhof</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>A Ética Protestante e o Espírito do Capitalismo</td>
+                <td>Max Weber</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Cosmovisão Cristã</td>
+                <td>Philip Ryken</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Esquizofrenia Intelectual - Cultura, Crise e Educação</td>
+                <td>Rousas John Rushdoony</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Dicionário - Português | Hebraico e Hebraico | Português</td>
+                <td>Abraham Hatzamri | Shoshana More-Hatzamri</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Ética</td>
+                <td>Dietrich Bonhoeffer</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Capital Moral - O Poder de Conexão da Sociedade</td>
+                <td>Dr. Roel Kuiper</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Bíblia de Recursos para o Ministério com Crianças</td>
+                <td>Hagnos</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Bíblia de Estudo de Genebra</td>
+                <td>2ª Edição Revisada e Ampliada</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Apologética Pura & Simples - Como levar os que buscam e os que duvidam a encontrar a fé</td>
+                <td>Alister McGrath</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Credo - Comentário ao Credo Apostólico</td>
+                <td>Karl Barth</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>O Cristo dos Pactos - 2ª Edição</td>
+                <td>O. Palmer Robertson</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Apologética Cristã</td>
+                <td>Cornelius Van Til</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Como viveremos - 2ª Edição</td>
+                <td>Francis Schaeffer</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Entendes o que lês - 3ª Edição</td>
+                <td>Gordon D. Fee & Douglas Stuart</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Noções de Grego Bíblico - Gramática Fundamental | Nova Edição</td>
+                <td>Lourenço Stelio Rega | Johannes Bergmann</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Ortodoxia</td>
+                <td>G. K. Chersteton</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Novo Dicionário Internacional de Teologia do Novo Testamento</td>
+                <td>Verlyn D. Verbrugge</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Uma História do Pensamento Cristão - Dos Primórdios ao Concílio de Calcedônia Vol.1 2ª Edição</td>
+                <td>Justo L. González</td>
+                <td>Cultura Cristã</td>
+                <td>História Cristã</td>
+            </tr>
+            <tr>
+                <td>Uma História do Pensamento Cristão - De Agostinho às vésperas da Reforma Vol.2 2ª Edição</td>
+                <td>Justo L. González</td>
+                <td>Cultura Cristã</td>
+                <td>História Cristã</td>
+            </tr>
+            <tr>
+                <td>O Peregrino</td>
+                <td>John Bunyan</td>
+                <td>Principis</td>
+                <td>Filosofia Cristã</td>
+            </tr>
+            <tr>
+                <td>Confissões</td>
+                <td>Agostinho</td>
+                <td>Principis</td>
+                <td>Filosofia Cristã</td>
+            </tr>
+            <tr>
+                <td>Imitação de Cristo</td>
+                <td>Tomás de Kempis</td>
+                <td>Principis</td>
+                <td>Filosofia Cristã</td>
+            </tr>
+            <tr>
+                <td>Discipulado</td>
+                <td>Dietrich Bonhoeffer</td>
+                <td>Mundo Cristão São Paulo</td>
+                <td>Filosofia Cristã</td>
+            </tr>
+            <tr>
+                <td>Pregação - Comunicado a Fé na Era do Ceticismo</td>
+                <td>Timothy Keller</td>
+                <td>Vida Nova</td>
+                <td>Apologética</td>
+            </tr>
+            <tr>
+                <td>Fundamentos Filosóficos da Educação</td>
+                <td>José Antônio Vasconcelos</td>
+                <td>Intersaberes</td>
+                <td>Filosofia da Educação</td>
+            </tr>
+            <tr>
+                <td>Em Busca de Sentido 45ª Edição</td>
+                <td>Viktor E. Frankl</td>
+                <td>Sinadal | Vozes</td>
+                <td>Apologética</td>
+            </tr>
+            <tr>
+                <td>Introdução ao Antigo Testamento</td>
+                <td>Raymond B. Dillard & Tremper Longman III</td>
+                <td>Vida Nova</td>
+                <td>História Cristã</td>
+            </tr>
+            <tr>
+                <td>Teologia do Novo Testamento</td>
+                <td>George Eldon Ladd</td>
+                <td>Hagnos</td>
+                <td>História Cristã</td>
+            </tr>
+            <tr>
+                <td>Teologia: Sistemática, Histórica e Filosófica - Uma Introdução á Teologia Cristã</td>
+                <td>Alister McGrath</td>
+                <td>Shedd</td>
+                <td>História Cristã</td>
+            </tr>
+            <tr>
+                <td>A Proclamação do Evangelho</td>
+                <td>Karl Barth</td>
+                <td>Fonte Editorial</td>
+                <td>Apologética</td>
+            </tr>
+            <tr>
+                <td>Bíblia Sagrada - Nova Versão Internacional</td>
+                <td>Leitura Perfeita</td>
+                <td>Thomas Nelson - Brasil</td>
+                <td>Estudo Bíblico</td>
+            </tr>
+            <tr>
+                <td>A Palavra para Hoje</td>
+                <td>Vida</td>
+                <td>Vida</td>
+                <td>Estudo Bíblico</td>
+            </tr>
+            <tr>
+                <td>Livro</td>
+                <td>Autor</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Em Busca de Deus - A Plenitude da Alegria Cristã</td>
+                <td>John Piper</td>
+                <td>Shedd</td>
+                <td>Apologética</td>
+            </tr>
+            <tr>
+                <td>Batismo - Em Diferentes Visões</td>
+                <td>Karl Barth - Oscar Cullmann</td>
+                <td>Fonte Editorial</td>
+                <td>Apologética</td>
+            </tr>
+            <tr>
+                <td>O Nosso Pai</td>
+                <td>Karl Barth</td>
+                <td>Fonte Editorial</td>
+                <td>Apologética</td>
+            </tr>
+            <tr>
+                <td>A Bíblia Viva</td>
+                <td>Mundo Cristão</td>
+                <td>Mundo Cristão</td>
+                <td>Estudo Bíblico</td>
+            </tr>
+            <tr>
+                <td>Chamado ao Discipulado</td>
+                <td>Karl Barth</td>
+                <td>Fonte Editorial</td>
+                <td>Apologética</td>
+            </tr>
+            <tr>
+                <td>Fundamentos Teológicos Educacionais</td>
+                <td>InterSaberes</td>
+                <td>InterSaberes</td>
+                <td>Filosofia da Educação</td>
+            </tr>
+            <tr>
+                <td>Apontamentos Sobre a História Das Igrejas Cristãs e os Livros Proféticos da Bíblia</td>
+                <td>InterSaberes</td>
+                <td>InterSaberes</td>
+                <td>História Cristã</td>
+            </tr>
+            <tr>
+                <td>Natal a Mais Linda Festa</td>
+                <td>Jorge Linhares</td>
+                <td>Getsêmani</td>
+                <td>Estudo Bíblico</td>
+            </tr>
+            <tr>
+                <td>Aconselhamento Redentivo</td>
+                <td>Wadislau Martins Gomes</td>
+                <td>Cultura Cristã</td>
+                <td>Filosofia Cristã</td>
+            </tr>
+            <tr>
+                <td>Apologética Além da Razão - Porque Ver é Realmente Crer</td>
+                <td>James W. Sire</td>
+                <td>Cultura Cristã</td>
+                <td>Apologética</td>
+            </tr>
+            <tr>
+                <td>Lutero e a Teologia da Cruz - A Ruptura Teológica de Martinho Lutero</td>
+                <td>Alister E. McGrath</td>
+                <td>Cultura Cristã</td>
+                <td>História Cristã</td>
+            </tr>
+            <tr>
+                <td>Apologética Contemporânea - A Veracidade da Fé Cristã - 2ª Edicão</td>
+                <td>William Lane Craig</td>
+                <td>Vida Nova</td>
+                <td>Apologética</td>
+            </tr>
+            <tr>
+                <td>O Caráter do Servo</td>
+                <td>Renê Terra Nova</td>
+                <td>Semente de Vida Brasil</td>
+                <td>Filosofia Cristã</td>
+            </tr>
+            <tr>
+                <td>Bíblia Sagrada King James</td>
+                <td>Casa da Palavra</td>
+                <td>Casa da Palavra</td>
+                <td>Estudo Bíblico</td>
+            </tr>
+            <tr>
+                <td>Dicionário Grego - Português do Antigo Testamento</td>
+                <td>Scholz, Vilson</td>
+                <td>Sociedade Bíblica do Brasil</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Documentário da Reforma - Breve Catecismo Comentado</td>
+                <td>Hélio Clemente</td>
+                <td>Vivendo Pela Palavra</td>
+                <td>Apologética</td>
+            </tr>
+            <tr>
+                <td>Notas da Xícara Maluca</td>
+                <td>N. D. Wilson</td>
+                <td>Monergismo</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>I Antologia da Academia Tanguatinguense de Letras</td>
+                <td>ATL</td>
+                <td>ATL</td>
+                <td>Antologia</td>
+            </tr>
+            <tr>
+                <td>A Cruz de Cristo</td>
+                <td>John Stott</td>
+                <td>Vida Acadêmica</td>
+                <td>Filosofia Cristã</td>
+            </tr>
+            <tr>
+                <td>As Agridoces Cadeias da Graça</td>
+                <td>Wadislau M. Gomes</td>
+                <td>Monergismo</td>
+                <td>Filosofia Cristã</td>
+            </tr>
+            <tr>
+                <td>O Poder da Esperança</td>
+                <td>Julián Melgosa e Michelson Borges</td>
+                <td>Casa Publicadora Brasileira</td>
+                <td>Filosofia Cristã</td>
+            </tr>
+            <tr>
+                <td>Teologia Sistemática Vol.1</td>
+                <td>Augustus Hopkins</td>
+                <td>Hagnos</td>
+                <td>Teologia Sistemática</td>
+            </tr>
+            <tr>
+                <td>Teologia Sistemática Vol.2</td>
+                <td>Augustus Hopkins</td>
+                <td>Hagnos</td>
+                <td>Teologia Sistemática</td>
+            </tr>
+            <tr>
+                <td>Carta Aos Romanos</td>
+                <td>Karl Barth</td>
+                <td>Fonte Editorial</td>
+                <td>Estudo Bíblico</td>
+            </tr>
+            <tr>
+                <td>Teologia do Antigo Testamento</td>
+                <td>Paul R. House</td>
+                <td>Vida Acadêmica</td>
+                <td>Estudo Bíblico</td>
+            </tr>
+            <tr>
+                <td>Homilética - Da Pesquisa ao Púlpito</td>
+                <td>Jilton Moraes</td>
+                <td>Vida Acadêmica</td>
+                <td>Homilética</td>
+            </tr>
+            <tr>
+                <td>Homilética - Do Púlpito ao Ouvinte</td>
+                <td>Jilton Moraes</td>
+                <td>Vida Acadêmica</td>
+                <td>Homilética</td>
+            </tr>
+            <tr>
+                <td>Homilética - Do Ouvinte à Prática</td>
+                <td>Jilton Moraes</td>
+                <td>Vida Acadêmica</td>
+                <td>Homilética</td>
+            </tr>
+            <tr>
+                <td>Introdução à Hermenêutica Bíblica - 3ª Edição</td>
+                <td>Walter C. Kaiser | JR | Moisés Silva</td>
+                <td>Cultura Cristã</td>
+                <td>Hermenêutica</td>
+            </tr>
+            <tr>
+                <td>Exegese Bíblica - Introdução á Metodologia</td>
+                <td>D. F. Izidro</td>
+                <td>Os Semeadores</td>
+                <td>Exegese</td>
+            </tr>
+            <tr>
+                <td>Novo Testamento Interlinear | Grego - Português 2ª Edição</td>
+                <td>Vilson Scholz</td>
+                <td>Sociedade Bíblica do Brasil</td>
+                <td>Estudo Bíblico</td>
+            </tr>
+            <tr>
+                <td>Supremacia de Deus na Pregação</td>
+                <td>John Piper</td>
+                <td>Shedd</td>
+                <td>Teologia Bíblica</td>
+            </tr>
+            <tr>
+                <td>Freud</td>
+                <td>Rousas John Rushdoony</td>
+                <td>Monergismo</td>
+                <td>Filosofia</td>
+            </tr>
+            <tr>
+                <td>Desigualdades de Gênero, Raça e Etnia</td>
+                <td>Ana Paula Comin de Carvalho | Cristian Jobi Salani | Débora Allebrandt | Nádia Elisa Meinerz | Nilson Wisheimer</td>
+                <td>InterSaberes</td>
+                <td>Sociologia</td>
+            </tr>
+            <tr>
+                <td>Teologia Sistemática</td>
+                <td>InterSaberes</td>
+                <td>InterSaberes</td>
+                <td>Teologia Sistemática</td>
+            </tr>
+            <tr>
+                <td>Personalidade Centrada em Deus</td>
+                <td>Wadislau Martins Gomes</td>
+                <td>Monergismo</td>
+                <td>Teologia Cristã</td>
+            </tr>
+            <tr>
+                <td>Exegese do Novo Testamento - Do Texto ao Púlpito</td>
+                <td>John D. Grassmick</td>
+                <td>Shedd</td>
+                <td>Exegese</td>
+            </tr>
+            <tr>
+                <td>Cristianismo Público - Evangelho e Lei</td>
+                <td>P. Andrew Sandlin</td>
+                <td>Monergismo/td>
+                <td>Teologia Cristã</td>
+            </tr>
+            <tr>
+                <td>Gestão Socio Ambiental no Brasil</td>
+                <td>Rodrigo Berté</td>
+                <td>InterSaberes</td>
+                <td>Socio Ambiental</td>
+            </tr>
+            <tr>
+                <td>Cartas a um Jovem Calvinista - Um convite à tradição reformada</td>
+                <td>James K. A. Smith</td>
+                <td>Monergismo</td>
+                <td>Teologia Cristã</td>
+            </tr>
+            <tr>
+                <td>Ética Cristã - Para Igrejas do Século XXI</td>
+                <td>Dernival L. Penha | Misael J. Vieira</td>
+                <td>QualiCor</td>
+                <td>Filosofia Cristã</td>
+            </tr>
+            <tr>
+                <td>Prática do Aconselhamento Redentivo</td>
+                <td>Wadislau Martins Gomes</td>
+                <td>Monergismo</td>
+                <td>Aconselhamento Redentivo</td>
+            </tr>
+            <tr>
+                <td>No Crespúsculo do Pensamento Ocidental</td>
+                <td>Herman Dooyerweerd</td>
+                <td>Monergismo</td>
+                <td>Filosofia Cristã</td>
+            </tr>
+            <tr>
+                <td>Teologia Histórica - Uma Introdução ao Desenvolvimento da Doutrina Cristã</td>
+                <td>Gregg R. Alisson</td>
+                <td>Vida Nova</td>
+                <td>Teologia Cristã</td>
+            </tr>
+            <tr>
+                <td>História Americana</td>
+                <td>Departamento dos Estados Unidos</td>
+                <td>Departamento dos Estados Unidos</td>
+                <td>História Americana</td>
+            </tr>
+            <tr>
+                <td>Interlinear | Hebraico - Português | Gênesis Completo + Textos bíblicos seletos</td>
+                <td>Enih Gil'ead</td>
+                <td>Clube dos Autores</td>
+                <td>Estudo Bíblico</td>
+            </tr>
+            <tr>
+                <td>O Homem que Calculava</td>
+                <td>Malba Taham</td>
+                <td>Record</td>
+                <td>Educação Financeira</td>
+            </tr>
+            <tr>
+                <td>Gramática Instrumental - Hebraico 3ª Edição</td>
+                <td>Antônio Renato Gusso</td>
+                <td>Vida Nova</td>
+                <td>Hebraico</td>
+            </tr>
+            <tr>
+                <td>Educação e Novas Tecnologias</td>
+                <td>Glaucia da Silva Brito | Ivonélia da Purificação</td>
+                <td>InterSaberes</td>
+                <td>Filosofia da Educação</td>
+            </tr>
+            <tr>
+                <td>Perspectivas No Movimento Cristão Mundial</td>
+                <td>Ralph D. Winter | Steven C. Hawthone | Kevin D. Bradford</td>
+                <td>Vida Nova</td>
+                <td>Sociologia Cristã</td>
+            </tr>
+            <tr>
+                <td>Biblia - Leitura Diária</td>
+                <td>Silas Malafaia</td>
+                <td>Central Gospel</td>
+                <td>Estudo Bíblico</td>
+            </tr>
+            <tr>
+                <td>Conhecendo As Doutrinas Na Bíblia</td>
+                <td>Myer Pearlman</td>
+                <td>Vida Acadêmica</td>
+                <td>Filosofia Cristã/td>
+            </tr>
+            <tr>
+                <td>Reflexões Cristãs</td>
+                <td>C. S. Lewis</td>
+                <td>Thomas Nelson Brasil</td>
+                <td>Filosofia Cristã</td>
+            </tr>
+            <tr>
+                <td>Cartas a Malcolm</td>
+                <td>C. S. Lewis</td>
+                <td>Thomas Nelson Brasil</td>
+                <td>Filosofia Cristã</td>
+            </tr>
+            <tr>
+                <td>Um Experimento Em Crítica Literária</td>
+                <td>C. S. Lewis</td>
+                <td>Thomas Nelson Brasil</td>
+                <td>Filosofia Cristã</td>
+            </tr>
+            <tr>
+                <td>Introdução ao Aconselhamento Bíblico</td>
+                <td>John MacArthur</td>
+                <td>Thomas Nelson Brasil</td>
+                <td>Aconselhamento Bíblico</td>
+            </tr>
+            <tr>
+                <td>A Revelação de Deus</td>
+                <td>Karl Barth</td>
+                <td>Fonte Editorial</td>
+                <td>Teologia Cristã</td>
+            </tr>
+            <tr>
+                <td>Dogmática Eclesiástica</td>
+                <td>Karl Barth</td>
+                <td>Fonte Editorial</td>
+                <td>Teologia Cristã</td>
+            </tr>
+            <tr>
+                <td>Esboço de Uma Dogmática</td>
+                <td>Karl Barth</td>
+                <td>Fonte Editorial</td>
+                <td>Teologia Cristã</td>
+            </tr>
+            <tr>
+                <td>Bíblia Sagrada - Letra Grande</td>
+                <td>Sociedade Bíblica</td>
+                <td>Sociedade Bíblica</td>
+                <td>Estudo Bíblico</td>
+            </tr>
+            <tr>
+                <td>Capitalismo para Principiantes</td>
+                <td>Vilmar Rodrigues</td>
+                <td>Ática</td>
+                <td>Filosofia</td>
+            </tr>
+            <tr>
+                <td>O Poder da Esposa que Ora</td>
+                <td>Stormie Omartian</td>
+                <td>Mundo Cristão</td>
+                <td>Teologia Cristã</td>
+            </tr>
+            <tr>
+                <td>Por que Creio Em Deus</td>
+                <td>Cornelius Van Till</td>
+                <td>Monergismo</td>
+                <td>Apologética</td>
+            </tr>
+            <tr>
+                <td>Uma Religião Sem Deus - Os Direitos Humanos e a Palavra de Deus</td>
+                <td>Jean-Marc Berthoud</td>
+                <td>Monergismo</td>
+                <td>Filosofia Cristã</td>
+            </tr>
+            <tr>
+                <td>Vestígios da Trindade</td>
+                <td>Peter J. Leithart</td>
+                <td>Monergismo</td>
+                <td>Apologética</td>
+            </tr>
+            <tr>
+                <td>Uma História do Pensamento Cristão - Da Reforma Protestante ao Século 20 Vol.3 2ª Edição</td>
+                <td>Justo L. González</td>
+                <td>Cultura Cristã</td>
+                <td>História Cristã</td>
+            </tr>
+            <tr>
+                <td>Práticas de Escrita Para o Letramento no Ensino Superior</td>
+                <td>Schirley Horácio de Gois Hartmann | Sebastião Donizete Santarosa</td>
+                <td>InterSaberes</td>
+                <td>Letras</td>
+            </tr>
+            <tr>
+                <td>Introdução à Pregação Reformada</td>
+                <td>Paulo Anglada</td>
+                <td>Knox</td>
+                <td>Teologia Cristã</td>
+            </tr>
+            <tr>
+                <td>Quem Controla a Escola, Governa o Mundo</td>
+                <td>Gary DeMar</td>
+                <td>Monergismo</td>
+                <td>Filosofia da Educação</td>
+            </tr>
+            <tr>
+                <td>A Tradição Cristã - O Surgimento da Tradição Católica</td>
+                <td>AJaroslav Pelikan</td>
+                <td>Shedd</td>
+                <td>História Cristã</td>
+            </tr>
+            <tr>
+                <td>A Tradição Cristã - O Espírito do Cristianismo Oriental</td>
+                <td>AJaroslav Pelikan</td>
+                <td>Shedd</td>
+                <td>História Cristã</td>
+            </tr>
+            <tr>
+                <td>A Tradição Cristã - O Desenvolvimento da Teologia Medieval</td>
+                <td>AJaroslav Pelikan</td>
+                <td>Shedd</td>
+                <td>História Cristã</td>
+            </tr>
+            <tr>
+                <td>A Tradição Cristã - A Reforma da Igreja e o Dogma</td>
+                <td>AJaroslav Pelikan</td>
+                <td>Shedd</td>
+                <td>História Cristã</td>
+            </tr>
+            <tr>
+                <td>A Tradição Cristã - A Doutrina Cristã e a Cultura Moderna</td>
+                <td>AJaroslav Pelikan</td>
+                <td>Shedd</td>
+                <td>História Cristã</td>
+            </tr>
+           <!-- <tr>
+                <td>Livro</td>
+                <td>Autor</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Livro</td>
+                <td>Autor</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Livro</td>
+                <td>Autor</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Livro</td>
+                <td>Autor</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Livro</td>
+                <td>Autor</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Livro</td>
+                <td>Autor</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+           <!-- <tr>
+                <td>Livro</td>
+                <td>Autor</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr>
+            <tr>
+                <td>Livro</td>
+                <td>Autor</td>
+                <td>Editora</td>
+                <td>Categoria</td>
+            </tr> -->
+        </tbody>
+    </table>
+<link rel="stylesheet" href="https://getbootstrap.com/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ <script type="text/javascript" src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript">
+	$(document).ready( function () {
+    $('#table_id').DataTable();
+} );
+</script>
+</body>
+</html>
